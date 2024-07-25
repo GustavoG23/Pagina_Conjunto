@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio / Registro | Hakuna PRO</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Crea tu Copropiedad</h1>
+             
+                <span>Registarte</span>
+                <input type="text" placeholder="Nombre completo" />
+                <input type="email" placeholder="Correo electrónico" />
+                <input type="password" placeholder="Contraseña" />
+                <button>Crear Cuenta</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Iniciar sesión</h1>
+
+                <span>Entra a tu propiedad</span>
+                <input type="email" placeholder="Usuario/Correo electrónico" />
+                <input type="password" placeholder="Contraseña" />
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button>INICIAR SESIÓN</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bienvenido!</h1>
+                    <p>Administra de manera eficiente tu copropiedad, anuncios, reservas, pagos y contacto con los residentes del conjunto</p>
+                    <button class="ghost" id="signIn">INICIAR SESIÓN</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Tu primer paso!</h1>
+                    <p>Al registrarme, acepto la Política de privacidad y los Términos de servicio de Hakuna PRO.</p>
+                    <button class="ghost" id="signUp">Crear copropiedad</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

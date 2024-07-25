@@ -2670,7 +2670,60 @@ select.mobile-device {
 	font-weight: 400;
 }
 
+/******* Botón WhatsApp ********/
+.btn-whatsapp{
+	position:relative;
+}
 
+.btn-whatsapp::before,
+.btn-whatsapp::after{
+  content:'';
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+  border-radius: 50%;
+  background-color: #00e676;
+  opacity: 0;
+  animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp::before{
+  animation-delay: 1s;
+}
+
+.btn-whatsapp::after{
+  animation-delay: 1.3s;
+}
+
+.btn-whatsapp img{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#fff;
+	color: #FFF;
+	border-radius:50px;
+	text-align:center;
+     font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+     z-index:100
+}
+
+@keyframes onda {
+  0% {
+        transform: scale(1);
+    }
+  15% {
+      opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
 
 
 
